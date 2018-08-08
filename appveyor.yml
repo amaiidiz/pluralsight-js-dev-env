@@ -7,8 +7,11 @@ install:
   - npm install
 
   test_script:
-    - node --version
-    - npm --version
+  #output useful info for debugging
+   - node --version
+   - npm --version
+    # run tests
     - npm test
 
+    # Dont actually build.
     build: off
